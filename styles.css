@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(rgb(100, 73, 134),
+                              rgb(87, 68, 143));
+}
+
+.login-container {
+  width: 30%;
+  height: 60vh;
+  background: white;
+  margin: 3em auto;
+  border-radius: 9px;
+  text-align: center;
+  position: relative;
+}
+
+.login-title {
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color:  rgb(100, 73, 134);
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.login-email,
+.login-password {
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 0 1em;
+}
+
+*:focus {
+  outline: none;
+}
+
+.login-container input:focus {
+  outline: 1px solid rgb(100, 73, 134);
+}
+
+.login-container__input-box {
+  margin-bottom: 1em;
+}
+
+[class^="login-container__input-box__icon"] {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.login-container__input-box__icon-email { 
+  background-image: url(person-icon.png); 
+}
+
+.login-container__input-box__icon-password { 
+  background-image: url(password-icon.png); 
+}
+
+.login-container__submit {
+  outline: none;
+  width: 70%;
+  height: 40px;
+  margin-left: 20px;
+  background: linear-gradient(120deg
+                             ,#563480,
+                              rgb(100, 73, 134));
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;
+}
+
+.login-container__submit:hover {
+  border: 3px solid #563480;
+  background: #563480;
+}
+
+.login-container__sign-up {
+  width: 100%;
+  height: 70px;
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  line-height: 70px;
+  border-top: 1px solid rgba(0,0,0,.2);
+  background: rgba(0,0,0,.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgba(0,0,0,.5);
+  font-size: 1.2em;
+}
+
+.sign-up {
+  color: rgb(100, 73, 134);
+}
+
+.fakeroku-logo {
+  display: block;
+  margin: 2em auto;
+}
